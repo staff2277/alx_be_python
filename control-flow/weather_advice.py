@@ -1,4 +1,4 @@
-weather = str(input(f"What's the weather like today? (sunny/rainy/cold): "))
+weather = str(input(f"What's the weather like today? (sunny/rainy/cold):"))
 
 response = ""
 
