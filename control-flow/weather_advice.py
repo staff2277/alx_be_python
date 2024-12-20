@@ -1,4 +1,4 @@
-weather = str(input(f"What's the weather like today? (sunny/rainy/cold):"))
+weather = str(input("What's the weather like today? (sunny/rainy/cold):"))
 
 response = ""
 
@@ -8,7 +8,7 @@ elif weather == 'rainy':
     response = "Don't forget your umbrella and a raincoat."
 elif weather == 'cold':
     response = "Make sure to wear a warm coat and a scarf."
-else: 
+else:
     response = "Sorry, I don't have recommendations for this weather."
 
 print(response)
