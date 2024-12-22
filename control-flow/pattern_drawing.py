@@ -6,7 +6,7 @@ count = 0
 while i > 0:
     print("*", end="")
     i -= 1
-    for times in range(1):
+    for _ in range(1):
         if count == size - 1:
             break
         elif i == 0:
