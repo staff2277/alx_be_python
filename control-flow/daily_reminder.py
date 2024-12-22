@@ -22,5 +22,4 @@ if time_bound == "yes":
 else:
     time_sensitive = "Consider completing it when you have free time."
 
-print(f"{task} {importance} {time_sensitive}")
-
+print(f"Reminder: {task} {importance} {time_sensitive}")
