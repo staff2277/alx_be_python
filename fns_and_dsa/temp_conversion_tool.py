@@ -14,16 +14,15 @@ if not isinstance(unit, str):
         unit = str(input("Is this temperature in Celsius or Fahrenheit? (C/F): "))
 
 def convert_to_celsius(fahrenheit):
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
-    results = (temperature -32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    print(f"{temperature}°{unit} is {results}°C")
-    return results
+    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    print(f"{fahrenheit}°F is {celsius}°C")  
+    return celsius
 
 def convert_to_fahrenheit(celsius):
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
-    results = (temperature * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-    print(f"{temperature}°{unit} is {results}°F")
-    return results
+    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    print(f"{celsius}°C is {fahrenheit}°F") 
+    return fahrenheit
+
     
     
    
