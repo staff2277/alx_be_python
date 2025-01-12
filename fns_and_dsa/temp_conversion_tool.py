@@ -7,7 +7,7 @@ def convert_to_celsius(fahrenheit):
     return celsius
 
 def convert_to_fahrenheit(celsius):
-    fahrenheit = (celsius * (9/5)) + 32 
+    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32 
     print(f"{celsius}°C is {fahrenheit}°F")
     return fahrenheit
 
