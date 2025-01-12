@@ -15,15 +15,15 @@ if not isinstance(unit, str):
 
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
-    FAHRENHEIT_TO_CELSIUS_FACTOR = (temperature -32) * (5/9)
-    print(f"{temperature}°{unit} is {FAHRENHEIT_TO_CELSIUS_FACTOR}°C")
-    return FAHRENHEIT_TO_CELSIUS_FACTOR
+    results = (temperature -32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    print(f"{temperature}°{unit} is {results}°C")
+    return results
 
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    CELSIUS_TO_FAHRENHEIT_FACTOR = (temperature * 1.8) + 32
-    print(f"{temperature}°{unit} is {CELSIUS_TO_FAHRENHEIT_FACTOR}°F")
-    return CELSIUS_TO_FAHRENHEIT_FACTOR
+    results = (temperature * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    print(f"{temperature}°{unit} is {results}°F")
+    return results
     
     
    
