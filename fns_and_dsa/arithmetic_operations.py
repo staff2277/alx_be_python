@@ -1,9 +1,4 @@
-def perform_operation():
-    print("Arithmetic Operations")
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
-
+def perform_operation(num1, num2, operation):
     if operation == "add":
         result = num1 + num2
     elif operation == "subtract":
@@ -12,13 +7,15 @@ def perform_operation():
         result = num1 * num2
     elif operation == "divide":
         if num2 == 0:
-            print("You cannot divide a number by zero")
-            return
+            return "You cannot divide a number by zero"
         result = num1 / num2
     else:
-        print("Invalid operation")
-        return
+        return "Invalid operation"
+    
+    return f"Result: {result}"
 
-    print(f"Result: {result}")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 
-perform_operation()
+print(perform_operation(num1, num2, operation))
