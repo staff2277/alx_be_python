@@ -5,8 +5,7 @@ def main():
 
     print(my_book)
 
-    print(repr(my_book))  # Expected to use __repr__
-
+    print(repr(my_book))
     del my_book
 
 if __name__ == "__main__":
